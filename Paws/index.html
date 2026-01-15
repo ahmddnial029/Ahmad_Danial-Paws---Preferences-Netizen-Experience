@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws</title>
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+
+<!-- Parallex Image -->
+  <div class = "cover-image">
+    <img src="../images/brown_cat2.png" alt="Cover cat" />
+  </div>
+
+  <!-- content wrapper -->
+   <div class="content-wrapper"></div>
+
+   <!-- create header -->
+    <header id="site-header" class="is--nav">
+      <nav class=" site-nav">
+        <ul>
+          <li><a href="../Paws/index.html">Cat</a></li>
+          <li><a href="../Paws/index.html">Home</a></li>
+        </ul>
+
+        <div class="site-title" id="title">
+          <h1>Paws & Preferences</h1>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+     <main id="site-main">
+      <section class="discover" id="discover">
+        <div class="container">
+          <div class="slide">
+            <h1 class="slide1">Choose Your Cat !</h1>
+          </div>
+          <div class="slide">
+            <h1 class="slide2 lightWidth"></h1>
+        </div>
+      </section>
+      <section class="card-container">
+        <div id="card-stack" class="card-stack"></div>
+      </section>
+
+    <div class="swipe-buttons">
+      <button id="dislike-btn" class="swipe-btn dislike">👎</button>
+     <button id="like-btn" class="swipe-btn like">❤</button>
+    </div>
+
+    <div id="actions" class="actions">
+      <button id="view-summary">View Summary</button>
+    </div>
+     </main>
+
+  <!-- Summary Overlay -->
+<div id="summary-overlay" class="summary-overlay">
+  <div class="summary-box">
+    <section id="summary" class="summary">
+      <h2>You liked <span id="like-count"></span> cats 🐱</h2>
+      <div id="liked-cats" class="liked-grid"></div>
+      <button id="close-summary">Close</button>
+    </section>
+  </div>
+</div>
+
+<!-- Intruction Box -->
+<div id="instruction-overlay" class="instruction-overlay">
+  <div class="instruction-box">
+    <h2>👋 Welcome to Paws & Preferences</h2>
+    <p class="welcome-text">
+      Find your favourite kitty by swiping through adorable cats!
+    </p>
+
+    <p>👉 Swipe right to like</p>
+    <p>👈 Swipe left to dislike</p>
+    <p>❤️ ❌ Or tap the buttons</p>
+    <p>Scroll down to start !</p>
+
+    <button id="close-instruction">Let’s go!</button>
+  </div>
+</div>
+
+  <script type="module" src="/src/main.ts"></script>
+  
+</body>
+</html>
